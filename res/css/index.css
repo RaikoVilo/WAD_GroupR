@@ -1,0 +1,104 @@
+:root {
+  --grey: #bfbfbf;
+  --white: #ffffff;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: unset;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--grey);
+  border-radius: 12px;
+  align-items: center;
+  height: 10%;
+  margin: 10px;
+}
+
+header:first-child {
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+header > img {
+  margin: 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav p {
+  margin: 0 5px;
+}
+
+nav a:hover {
+  color: green;
+}
+
+aside {
+  display: flex;
+  height: 100%;
+  width: 20%;
+}
+
+.left,
+.right {
+  flex: 1;
+  background-color: var(--grey);
+  margin: 0 10px;
+  border-radius: 12px;
+}
+
+section {
+  flex-grow: 1;
+}
+
+footer {
+  display: flex;
+  background-color: var(--grey);
+  border-radius: 12px;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+footer > h1 {
+  margin: unset;
+}
+
+.content {
+  display: flex;
+  height: 80%;
+}
+
+.content:after {
+  display: table;
+}
+
+.posts {
+  height: 100%;
+  flex-direction: column;
+  flex: 1;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+include {
+  height: 100%;
+}
