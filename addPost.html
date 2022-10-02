@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res/css/addPost.css">
+    <title>Add addPost</title>
+  </head>
+  <body id="main-page" class="body">
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+      </nav>
+      <img src="res/images/profile_filler.png"
+        height="50px"
+        width="50px"
+        />
+    </header>
+    <div class="content">
+        <aside>
+            <div class="left"></div>
+        </aside>
+        <section>
+            <div class="addPost">
+                <form>
+                    <label>Post body</label>
+                    <input type="text" id="textarea" name="textarea"><br>
+                    <label>Select file</label>
+                    <input type="file" id="postfile" name="postfile">
+                    <label for="postfile">Choose File</label>
+                    <span id="file-chosen">No file chosen</span>
+                    <input type="submit" value="Create Post">
+                </form>
+            </div>
+        </section>
+        <aside>
+            <div class="right"></div>
+        </aside>
+    </div>
+  </body>
+</html>
