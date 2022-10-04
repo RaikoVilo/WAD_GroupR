@@ -64,6 +64,10 @@ aside {
 
 section {
   flex-grow: 1;
+  padding: 10px 20px;
+  
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 footer {
@@ -91,14 +95,29 @@ footer > h1 {
 
 .posts {
   height: 100%;
+  width: 100%;
+
   flex-direction: column;
-  flex: 1;
-
-  overflow-y: auto;
-  overflow-x: hidden;
-
+  flex: 1 1;
 }
 
-include {
-  height: 100%;
+.post {
+  padding: 10px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 0 40px 15px 40px;
+  background-color: var(--grey);
+  justify-content: center;
+  flex: 1;
+}
+
+.post-body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 + p {
+  margin-top: unset;
 }
