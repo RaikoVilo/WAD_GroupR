@@ -1,10 +1,17 @@
 :root {
   --grey: #bfbfbf;
   --white: #ffffff;
+  --beige: #DFC2A3;
+  --lightbrown: #886F61;
+  --brown: #5C4E46;
+  --rose:#C97878;
+  --aqua: #78c9c9;
 }
 
 html {
   height: 100%;
+  color: var(--brown);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -18,7 +25,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: var(--grey);
+  background-color: var(--lightbrown);
   border-radius: 12px;
   align-items: center;
   height: 10%;
@@ -45,7 +52,7 @@ nav p {
 }
 
 nav a:hover {
-  color: green;
+  color: var(--aqua);
 }
 
 aside {
@@ -57,7 +64,7 @@ aside {
 .left,
 .right {
   flex: 1;
-  background-color: var(--grey);
+  background-color: var(--lightbrown);
   margin: 0 10px;
   border-radius: 12px;
 }
@@ -72,7 +79,7 @@ section {
 
 footer {
   display: flex;
-  background-color: var(--grey);
+  background-color: var(--lightbrown);
   border-radius: 12px;
   height: 10%;
   justify-content: center;
@@ -104,12 +111,13 @@ footer > h1 {
 .post {
   padding: 10px;
   height: auto;
-  border: 1px solid black;
+  border: 1px solid var(--brown);
   border-radius: 20px;
   margin: 0 40px 15px 40px;
-  background-color: var(--grey);
+  background-color: var(--beige);
   justify-content: center;
   flex: 1;
+  font-size: large;
 }
 
 .post-body {
@@ -120,4 +128,74 @@ footer > h1 {
 
 h1 + p {
   margin-top: unset;
+}
+
+a:link, a:visited{
+  color: var(--beige);
+}
+
+.content-add-post {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.addPost {
+  height: wrap;
+  width: wrap;
+  background-color: var(--beige);
+  border-radius: 12px;
+  margin: 10px;
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 20%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+textarea{
+  resize: none;
+  padding: 0.5rem;
+  margin: 10px;
+}
+
+.post-body-textarea, .post-choose-file{
+  flex-direction: row;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.post-choose-file{
+  width: 100%;
+  justify-items: flex-start;
+  align-items: center;
+}
+
+
+#choosefile{
+  background-color: var(--lightbrown);
+  color: var(--white);
+  border-radius: 12px;
+  border: unset;
+  padding: 0.5rem;
+  font-size: x-large;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#submit{
+  background-color: var(--rose);
+  color:var(--white);
+  border-radius: 12px;
+  border: unset;
+  padding: 0.5rem;
+  font-size: x-large;
+  width: fit-content;
+  margin: 10px;
 }
