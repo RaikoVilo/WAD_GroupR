@@ -78,14 +78,22 @@
     border-radius: 12px;
   }
 
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
   .container{
     height: wrap;
-    width: wrap;
+    width: max-content;
     background-color: var(--beige);
     border-radius: 12px;
     margin: 10px;
     font-size: xx-large;
     text-align: center;
+    padding: 20px;
     margin-bottom: 20%;
   }
   .login_blue_text{
@@ -114,5 +122,13 @@
     font-size: x-large;
     width: fit-content;
     margin: 10px;
+    cursor: pointer;
   }
 
+  .input_class:invalid ~  a {
+    pointer-events: none;
+  }
+
+  .input_class:valid ~ a {
+    pointer-events: fill;
+  }

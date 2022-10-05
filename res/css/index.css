@@ -37,7 +37,7 @@ header:first-child {
   font-size: 20px;
 }
 
-header > img {
+header > a {
   margin: 10px;
 }
 
@@ -108,7 +108,11 @@ footer > h1 {
   flex: 1 1;
 }
 
-.post {
+.filler {
+  display: none;
+}
+
+.filler ~ .post {
   padding: 10px;
   height: auto;
   border: 1px solid var(--brown);
@@ -123,7 +127,12 @@ footer > h1 {
 .post-body {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: flex-start;
+}
+
+.post-profile {
+  display: flex;
+  justify-content: space-between;
 }
 
 h1 + p {
@@ -198,4 +207,60 @@ textarea{
   font-size: x-large;
   width: fit-content;
   margin: 10px;
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container{
+  height: wrap;
+  width: max-content;
+  background-color: var(--beige);
+  border-radius: 12px;
+  margin: 10px;
+  font-size: xx-large;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20%;
+}
+.login_blue_text{
+  color: rgb(0, 191, 255);
+}
+.login_input_text{
+  resize: none;
+  padding: 0.5rem;
+  margin: 10px;
+}
+.login_welcome{
+  font-weight: bold;
+}
+.log_in_button{
+  margin-bottom: 10px;
+  width: 100%;
+  justify-items: flex-start;
+  align-items: center;
+}
+#submit{
+  background-color: var(--rose);
+  color:var(--white);
+  border-radius: 12px;
+  border: unset;
+  padding: 0.5rem;
+  font-size: x-large;
+  width: fit-content;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.input_class:invalid ~ a {
+  pointer-events: none;
+}
+
+.input_class:valid ~ a {
+  pointer-events: fill;
 }

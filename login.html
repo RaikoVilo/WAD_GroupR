@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="res/css/login.css">
+    <link rel="stylesheet" href="res/css/index.css">
     <title>Login page</title>
   </head>
   <body id="login-page" class="body">
@@ -12,35 +12,43 @@
       <nav>
         <a href="index.html">Home</a>
       </nav>
-      <img src="res/images/profile_filler.png"
+      <a>
+        <img src="res/images/profile_filler.png"
         height="50px"
         width="50px"
         />
+      </a>
     </header>
-    <div class="container">
-        <div class="login_welcome">
-            <label>Welcome to PostIt</label>
-        </div>
-        <div class="login_blue_text">
-            <label>Create an account</label>
-        </div>
-        <div class="login_black_text">
-            <label>or<br>
-            Please log in</label>
-        </div>
-        <div class="login_input_text">
-            <input type ="Email" id="email" placeholder="Email" name="email" required><br>
-            <input type="Password" id="password" placeholder="Password" name="password" required>
-        </div>
-        <div class="log_in_button">
-            <a href="index.html">
-            <input type="submit" id="submit" value="Log in"/>
-        </a>
-        </div>
-        <div class="login_blue_text">
-            <label>Forget password</label>
-        </div>
+    <div class="wrapper">
+      <div class="container">
+          <div class="login_welcome">
+              <label>Welcome to PostIt</label>
+          </div>
+          <div class="login_blue_text">
+              <label>Create an account</label>
+          </div>
+          <div class="login_black_text">
+              <label>or<br>
+              Please log in</label>
+          </div>
+          <div class="login_input_text">
+              <input class="input_class" type="Email" id="email" placeholder="Email" name="email" required><br>
+              <input class="input_class" type="Password" id="password" placeholder="Password" name="password" required><br>
+              <a id="submit" href="index.html">
+                <input type="submit" id="submit" value="Log in"/>
+              </a>
+
+          </div>
+          <div class="log_in_button">
+              
+          </div>
+          <div class="login_blue_text">
+              <label>Forget password</label>
+          </div>
+      </div>
     </div>
+  </body>
+</html>
 
     
     
