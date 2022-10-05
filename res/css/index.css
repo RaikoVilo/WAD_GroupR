@@ -52,7 +52,9 @@ nav p {
 }
 
 nav a:hover {
-  color: var(--aqua);
+  border-radius: 20px;
+  padding: 5px;
+  background-color: var(--rose);
 }
 
 aside {
@@ -198,7 +200,7 @@ textarea{
   margin: 10px;
 }
 
-#submit{
+#submit, #submit2{
   background-color: var(--rose);
   color:var(--white);
   border-radius: 12px;
@@ -209,6 +211,10 @@ textarea{
   margin: 10px;
 }
 
+#submit2 {
+  cursor: pointer;
+  pointer-events: fill;
+}
 
 .wrapper {
   display: flex;
@@ -263,4 +269,10 @@ textarea{
 
 .input_class:valid ~ a {
   pointer-events: fill;
+}
+
+@media (min-width > 750) {
+  aside {
+    display: none;
+  }
 }
