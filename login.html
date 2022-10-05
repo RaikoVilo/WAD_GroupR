@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="res/css/Login.css">
+    <link rel="stylesheet" href="res/css/login.css">
     <title>Login page</title>
   </head>
   <body id="login-page" class="body">
     <header>
       <nav>
-        <a href="file:///C:/Users/reesi/OneDrive/Dokumendid/WAD/EssaKodut%C3%B6%C3%B6/WAD_GroupR/index.html">Home</a>
+        <a href="index.html">Home</a>
       </nav>
       <img src="res/images/profile_filler.png"
         height="50px"
@@ -18,27 +18,27 @@
         />
     </header>
     <div class="container">
-        <div class="welcome">
-            <p>Welcome to PostIt</p>
+        <div class="login_welcome">
+            <label>Welcome to PostIt</label>
         </div>
-        <div class="blue_text">
-            <p>Create an account</p>
+        <div class="login_blue_text">
+            <label>Create an account</label>
         </div>
-        <div class="black_text">
-            <p>or<br>
-            Please log in</p>
+        <div class="login_black_text">
+            <label>or<br>
+            Please log in</label>
         </div>
-        <div class="input_text">
-            <input type ="Email" placeholder="Email" name="email" required><br>
-            <input type="Password" placeholder="Password" name="password" required>
+        <div class="login_input_text">
+            <input type ="Email" id="email" placeholder="Email" name="email" required><br>
+            <input type="Password" id="password" placeholder="Password" name="password" required>
         </div>
         <div class="log_in_button">
-            <a href="file:///C:/Users/reesi/OneDrive/Dokumendid/WAD/EssaKodut%C3%B6%C3%B6/WAD_GroupR/index.html">
-            <button type="submit">Log in</button>
+            <a href="index.html">
+            <input type="submit" id="submit" value="Log in"/>
         </a>
         </div>
-        <div class="blue_text">
-            <p>Forget password</p>
+        <div class="login_blue_text">
+            <label>Forget password</label>
         </div>
     </div>
 

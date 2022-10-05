@@ -1,10 +1,16 @@
 :root {
     --grey: #bfbfbf;
     --white: #ffffff;
+    --beige: #DFC2A3;
+    --lightbrown: #886F61;
+    --brown: #5C4E46;
+    --rose:#C97878;
+    --aqua: #78c9c9;
   }
-  
   html {
     height: 100%;
+    color: var(--brown);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   body {
@@ -24,10 +30,20 @@
     height: 10%;
     margin: 10px;
   }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--lightbrown);
+    border-radius: 12px;
+    align-items: center;
+    height: 10%;
+    margin: 10px;
+  }
+  
   header:first-child {
     padding-left: 20px;
     font-size: 20px;
-
   }
   
   header > img {
@@ -38,31 +54,65 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    
   }
   
-  nav a {
-    text-decoration: none;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
+  nav p {
+    margin: 0 5px;
   }
   
   nav a:hover {
-    background-color: green;
+    color: var(--aqua);
+  }
+  
+  aside {
+    display: flex;
+    height: 100%;
+    width: 20%;
+  }
+  
+  .left,
+  .right {
+    flex: 1;
+    background-color: var(--lightbrown);
+    margin: 0 10px;
+    border-radius: 12px;
   }
 
   .container{
-    margin-top: 5%;
-    padding: 25px;
-    background-color: var(--grey);
-    width: 50%;
+    height: wrap;
+    width: wrap;
+    background-color: var(--beige);
     border-radius: 12px;
-    align-self: center;
+    margin: 10px;
+    font-size: xx-large;
     text-align: center;
-    
+    margin-bottom: 20%;
   }
-  .blue_text{
-    
+  .login_blue_text{
     color: rgb(0, 191, 255);
+  }
+  .login_input_text{
+    resize: none;
+    padding: 0.5rem;
+    margin: 10px;
+  }
+  .login_welcome{
+    font-weight: bold;
+  }
+  .log_in_button{
+    margin-bottom: 10px;
+    width: 100%;
+    justify-items: flex-start;
+    align-items: center;
+  }
+  #submit{
+    background-color: var(--rose);
+    color:var(--white);
+    border-radius: 12px;
+    border: unset;
+    padding: 0.5rem;
+    font-size: x-large;
+    width: fit-content;
+    margin: 10px;
   }
 
