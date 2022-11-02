@@ -17,11 +17,3 @@ function myFunction() {
       }
     }
   }
-
-  function getEmailValue(){
-    // Selecting the input element and get its value 
-    var inputVal = document.getElementById("email").value;
-    
-    // Displaying the value
-    alert(inputVal);
-}
