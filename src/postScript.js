@@ -18,7 +18,6 @@ window.onload = function() {
         console.log(json);
 
         for (var i in json) {
-          console.log("siin")
 
           const post = json[i]
           const postDiv = document.createElement("div");
@@ -29,7 +28,7 @@ window.onload = function() {
           postProfileDiv.classList.add('post-profile')
           postBodyDiv.appendChild(postProfileDiv)
           const postProfileImg = document.createElement("img")
-          //postProfileImg.src(addimage("res/images/profile_filler.png"))
+          postProfileImg.src = "/res/images/profile_filler.png"
           postProfileImg.style.height = "50px"
           postProfileImg.style.width = "50px"
           postProfileDiv.appendChild(postProfileImg)
@@ -47,11 +46,11 @@ window.onload = function() {
           postBodyDiv.appendChild(bodyP)
           if (post.hasOwnProperty('picture')) {
             const photoImg = document.createElement("img")
-            //photoImg.src(post.picture)
+            photoImg.src = post.picture
             postBodyDiv.appendChild(photoImg)
           }
           const likeImg = document.createElement("img")
-          //likeImg.src("res/images/like.png")
+          likeImg.src = "res/images/like.png"
           likeImg.style.height = "auto"
           likeImg.style.width = "30px"
           postBodyDiv.appendChild(likeImg)
