@@ -58,7 +58,7 @@ nav a:hover {
 }
 
 aside {
-  display: flex;
+  display: none;
   height: 100%;
   width: 20%;
 }
@@ -119,7 +119,7 @@ footer > h1 {
   height: auto;
   border: 1px solid var(--brown);
   border-radius: 20px;
-  margin: 0 40px 15px 40px;
+  margin: 0 0 15px 0;
   background-color: var(--beige);
   justify-content: center;
   flex: 1;
@@ -271,8 +271,20 @@ textarea{
   pointer-events: fill;
 }
 
-@media (min-width > 750) {
+@media (min-width: 900px) {
   aside {
-    display: none;
+    display: flex;
+  }
+
+  .filler ~ .post {
+    padding: 10px;
+    height: auto;
+    border: 1px solid var(--brown);
+    border-radius: 20px;
+    margin: 0 40px 15px 40px;
+    background-color: var(--beige);
+    justify-content: center;
+    flex: 1;
+    font-size: large;
   }
 }
