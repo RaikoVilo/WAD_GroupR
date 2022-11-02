@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="res/css/index.css">
+    <script src="res\js\index.js"></script>
     <title>Add addPost</title>
   </head>
   <body id="add-post-page" class="body">
@@ -12,12 +13,14 @@
       <nav>
         <a href="index.html">Home</a>
       </nav>
-      <a href="login.html">
-        <img src="res/images/profile_filler.png"
-        height="50px"
-        width="50px"
-        />
-      </a>
+      <div class="dropdown">
+        <input type="image" src="res\images\profile_filler.png" onclick="myFunction()" height="50px" width="50px" class="dropbtn"/>
+        <div id="myDropdown" class="dropdown-content">
+        <a>John Doe</a>
+        <a>john.doe@ut.ee</a>
+        <a href="login.html">Log out</a>
+        </div>
+      </div>
     </header>
     <div class="content-add-post">
       <div class="addPost">

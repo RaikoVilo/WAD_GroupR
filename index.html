@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="src/postScript.js"></script>
     <link rel="stylesheet" href="res/css/index.css">
+    <script src="res\js\index.js"></script>
     <title>Main page</title>
   </head>
   <body id="main-page" class="body">
@@ -15,12 +16,14 @@
         <p> | </p>
         <a href="addPost.html">addPost</a>
       </nav>
-      <a href="login.html">
-        <img src="res/images/profile_filler.png"
-        height="50px"
-        width="50px"
-        />
-      </a>
+      <div class="dropdown">
+        <input type="image" src="res\images\profile_filler.png" onclick="myFunction()" class="dropbtn"/>
+        <div id="myDropdown" class="dropdown-content">
+        <a> John Doe</a>
+        <a>john.doe@ut.ee</a>
+        <a href="login.html">Logout</a>
+        </div>
+      </div>
     </header>
     <div class="content">
       <aside>
