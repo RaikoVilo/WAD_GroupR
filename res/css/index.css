@@ -286,12 +286,10 @@ textarea{
   margin-top: 5px;
   margin-right: 10px;
 }
-
+/*Icon on the log in page*/
 .icon {
   height: 50px;
   width: 50px;
-  margin-top: 5px;
-  margin-right: 0px;
 }
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
