@@ -60,6 +60,7 @@ nav a:hover {
 aside {
   display: none;
   height: 100%;
+  min-width: 200px;
   width: 20%;
 }
 
@@ -224,7 +225,6 @@ textarea{
 }
 
 .container{
-  height: wrap;
   width: max-content;
   background-color: var(--beige);
   border-radius: 12px;
@@ -232,7 +232,7 @@ textarea{
   font-size: xx-large;
   text-align: center;
   padding: 20px;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 .login_blue_text{
   color: rgb(0, 191, 255);
@@ -261,6 +261,10 @@ textarea{
   width: fit-content;
   margin: 10px;
   cursor: pointer;
+}
+
+.input_class {
+  margin-bottom: 10px;
 }
 
 .input_class:invalid ~ a {
@@ -292,6 +296,7 @@ textarea{
 /* Dropdown Button */
 .dropbtn {
   border: none;
+  border-radius: 30px;
   cursor: pointer;
   height: 50px;
   width: 50px;

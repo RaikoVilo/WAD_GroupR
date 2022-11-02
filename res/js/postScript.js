@@ -11,8 +11,8 @@ window.onload = function() {
   postlist = document.getElementsByClassName('posts')[0]
   console.log(postlist)
 
-  //fetch('https://api.npoint.io/ddedb538de456ca0b63a')
-  fetch('res/json/posts.json')
+  fetch('https://api.npoint.io/ddedb538de456ca0b63a')
+  //fetch('res/json/posts.json')
     .then((response) => response.json())
     .then(json => {
         console.log(json);
@@ -31,6 +31,7 @@ window.onload = function() {
           postProfileImg.src = "/res/images/profile_filler.png"
           postProfileImg.style.height = "50px"
           postProfileImg.style.width = "50px"
+          postProfileImg.style.borderRadius = "30px"
           postProfileDiv.appendChild(postProfileImg)
           const dateSpan = document.createElement("span")
           const date = document.createTextNode(post.created)
@@ -47,6 +48,7 @@ window.onload = function() {
           if (post.hasOwnProperty('picture')) {
             const photoImg = document.createElement("img")
             photoImg.src = post.picture
+            photoImg.style.borderRadius = "10px"
             postBodyDiv.appendChild(photoImg)
           }
           const likeImg = document.createElement("img")
@@ -58,10 +60,10 @@ window.onload = function() {
           postlist.appendChild(postDiv)
         }
     })
-    // .catch(err => {
-    //   let errDiv = document.createElement("div");
-    //   errDiv.className = 'post';
-    //   errDiv.innerText = err;
-    //   document.body.appendChild(errDiv);
-    // })
+    .catch(err => {
+      let errDiv = document.createElement("div");
+      errDiv.className = 'post';
+      errDiv.innerText = err;
+      document.body.appendChild(errDiv);
+    })
 }
