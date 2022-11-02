@@ -283,8 +283,16 @@ textarea{
   cursor: pointer;
   height: 50px;
   width: 50px;
+  margin-top: 5px;
+  margin-right: 10px;
 }
 
+.icon {
+  height: 50px;
+  width: 50px;
+  margin-top: 5px;
+  margin-right: 0px;
+}
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
   background-color:#DFC2A3;
@@ -299,8 +307,8 @@ textarea{
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
-  position: absolute;
-  background-color: #C97878;
+  position:absolute; right: 5px;
+  background-color: #DFC2A3;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
